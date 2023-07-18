@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata :
-  name: sriram108592-regapp
+  name: sriram108592-my-app:v1
   labels :
     app: regapp
 spec:
@@ -17,7 +17,7 @@ spec:
     spec:
       containers :
       - name: regapp
-        image: sriram108592/regapp
+        image: sriram108592/my-app:v1
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
